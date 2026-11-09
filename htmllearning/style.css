@@ -1,0 +1,69 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+.rainbow-text{
+    background:linear-gradient(90deg,red,orange,yellow,green,blue) ;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.right-text{
+    text-align: right;
+}
+.html-background{
+    background-image: url("../奶娃钓徒/奶蛙背景图生成.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    background-color: rgba(255,255,255,0.2);
+    background-blend-mode: lighten; 
+    /*背景色和图片比较取比较亮的那部分 为背景内部关系*/
+    padding: 20px;
+    box-sizing: border-box;
+}
+header{
+    height: 100px;
+    position:relative;
+}
+.advanced-words{
+    height: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    font-size: 60px;
+}
+h1{
+    position:relative;
+    left:0vw;
+    width: 130px;
+    height: 100px;
+    background-position: center;
+    background-image: url(../奶娃钓徒/奶蛙之家.png);
+    background-size: cover;
+    mix-blend-mode: multiply;
+    /*背景和背景关系用mix*/
+    background-repeat: no-repeat;
+    text-indent: -9999999px;
+}
+ul{
+    position:absolute;
+    right:30px;
+    top:50%;
+}
+ul a{
+    color: greenyellow;
+    text-decoration:none;
+}
+ul a:hover{
+    text-decoration: underline;
+}
+ul li{
+    display:inline;
+    margin-right: 1vw;
+    font-size:22px;
+}
