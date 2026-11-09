@@ -2,7 +2,6 @@
     padding:0;
     margin:0;
 }
-
 .rainbow-text{
     background:linear-gradient(90deg,red,orange,yellow,green,blue) ;
     -webkit-background-clip: text;
@@ -12,14 +11,15 @@
     text-align: right;
 }
 .html-background{
-    background-image: url("../奶娃钓徒/奶蛙背景图生成.png");
+    /* ⚠️ IMPORTANT: fix your image path for GitHub/Netlify! */
+    background-image: url("milkfrog-background.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     min-height: 100vh;
     background-color: rgba(255,255,255,0.2);
     background-blend-mode: lighten; 
-    /*背景色和图片比较取比较亮的那部分 为背景内部关系*/
+    /* Blend background‑color and background‑image, pick brighter pixel */
     padding: 20px;
     box-sizing: border-box;
 }
@@ -42,11 +42,12 @@ h1{
     left:0vw;
     width: 130px;
     height: 100px;
+    /* ⚠️ IMPORTANT: fix image path for GitHub/Netlify! */
+    background-image: url("milkfrog-home-logo.png");
     background-position: center;
-    background-image: url(../奶娃钓徒/奶蛙之家.png);
     background-size: cover;
     mix-blend-mode: multiply;
-    /*背景和背景关系用mix*/
+    /* mix‑blend‑mode blends element with parent background */
     background-repeat: no-repeat;
     text-indent: -9999999px;
 }
@@ -54,6 +55,7 @@ ul{
     position:absolute;
     right:30px;
     top:50%;
+    transform: translateY(-50%);
 }
 ul a{
     color: greenyellow;
