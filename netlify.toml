@@ -1,0 +1,11 @@
+# Netlify configuration for the Milk Frog Field Guide.
+# The repository root holds the assets and README; the site itself is the
+# my_website folder. No build step is required.
+
+[build]
+  publish = "my_website"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
