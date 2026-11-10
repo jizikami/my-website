@@ -1,5 +1,7 @@
 # Milk Frog Field Guide
 
+**Live site: <https://jizikami.github.io/my-website/>**
+
 A four-page fan-made field guide to the internet's most doubtful frog. Static HTML, hand-written CSS, a little JavaScript. No build step, no server, no database.
 
 The site lives in [`my_website/`](my_website/) and is designed to be published as a plain static folder.
@@ -71,7 +73,11 @@ Then open <http://localhost:8000>. Opening `my_website/index.html` directly also
 
 ## Deploy
 
-### Netlify
+### GitHub Pages (live)
+
+Pages is enabled for this repository. Every push to `main` runs `.github/workflows/pages.yml`, uploads the `my_website` folder, and publishes it to <https://jizikami.github.io/my-website/>.
+
+### Netlify (optional)
 
 `netlify.toml` already points Netlify at the `my_website` folder. An earlier, misnamed `1. netlify.toml` in the repository pointed at the old `htmllearning` folder; it has been removed so Netlify reads the real configuration.
 
