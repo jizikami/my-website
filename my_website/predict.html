@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Milk test — Milk Frog Field Guide</title>
+  <meta name="description" content="Four questions, three possible frogs, zero data collection. Find out which milk species you are.">
+  <meta name="theme-color" content="#FFF8E9">
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Milk Frog Field Guide">
+  <meta property="og:title" content="Which milk species are you?">
+  <meta property="og:description" content="Four questions, three possible frogs, zero data collection.">
+  <meta property="og:image" content="assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Milk Frog thinking, beside the words: Milk Frog, always in doubt.">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="shell header-inner">
+      <a class="brand" href="index.html" aria-label="Milk Frog Field Guide, home">
+        <img class="brand-mark" src="assets/brand-mark.png" alt="" width="42" height="42">
+        <span class="brand-copy">
+          <span class="brand-name">Milk Frog</span>
+          <span class="brand-sub">Field Guide</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="nav-toggle-label" data-nav-label>Menu</span>
+        <span class="nav-toggle-icon" aria-hidden="true"><span></span><span></span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation" data-nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="origin.html">Origin</a></li>
+          <li><a href="memes.html">The meme</a></li>
+          <li><a href="predict.html" aria-current="page">Milk test</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <header class="page-head shell">
+      <p class="eyebrow">Chapter 03 · Derivatives</p>
+      <h1>Which milk species are you?</h1>
+      <p class="lede">The frog has spawned a small taxonomy. Answer four questions and this page will assign you a species. It is not science. It is barely a quiz.</p>
+      <p class="article-meta"><span>4 questions</span><span>3 species</span><span>0 data collected</span></p>
+    </header>
+
+    <div class="shell quiz-layout">
+      <section class="quiz" aria-labelledby="quiz-title" data-quiz>
+        <div class="quiz-head">
+          <div>
+            <p class="eyebrow">The milk test</p>
+            <h2 id="quiz-title">Four questions.</h2>
+          </div>
+          <div class="quiz-progress">
+            <span data-progress-text>0 of 4 answered</span>
+            <span class="quiz-bar" aria-hidden="true"><span data-progress-bar></span></span>
+          </div>
+        </div>
+
+        <form data-quiz-form novalidate>
+          <fieldset class="question">
+            <legend><span class="q-no">01</span> A message you sent goes unanswered for an hour. What do you do?</legend>
+            <div class="options">
+              <label class="option">
+                <input type="radio" name="q1" value="oracle" data-scores="oracle:3,house:1">
+                <span class="option-body"><span class="option-key">A</span><span>Read it again, then rewrite it in my head.</span></span>
+              </label>
+              <label class="option">
+                <input type="radio" name="q1" value="curator" data-scores="curator:3,house:1">
+                <span class="option-body"><span class="option-key">B</span><span>Send the frog. Let the frog handle it.</span></span>
+              </label>
+              <label class="option">
+                <input type="radio" name="q1" value="house" data-scores="house:3,oracle:1">
+                <span class="option-body"><span class="option-key">C</span><span>Assume everyone is busy. Move on.</span></span>
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset class="question">
+            <legend><span class="q-no">02</span> Pick a Saturday.</legend>
+            <div class="options">
+              <label class="option">
+                <input type="radio" name="q2" value="house" data-scores="house:3,oracle:1">
+                <span class="option-body"><span class="option-key">A</span><span>Home. Blanket. One long thought.</span></span>
+              </label>
+              <label class="option">
+                <input type="radio" name="q2" value="curator" data-scores="curator:3,house:1">
+                <span class="option-body"><span class="option-key">B</span><span>Out with a camera, collecting things to show people later.</span></span>
+              </label>
+              <label class="option">
+                <input type="radio" name="q2" value="oracle" data-scores="oracle:3,curator:1">
+                <span class="option-body"><span class="option-key">C</span><span>Making something at 1 a.m. and calling it a gift.</span></span>
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset class="question">
+            <legend><span class="q-no">03</span> Someone asks what you're thinking about.</legend>
+            <div class="options">
+              <label class="option">
+                <input type="radio" name="q3" value="oracle" data-scores="oracle:3,house:1">
+                <span class="option-body"><span class="option-key">A</span><span>Nothing. (It is not nothing.)</span></span>
+              </label>
+              <label class="option">
+                <input type="radio" name="q3" value="curator" data-scores="curator:3,oracle:1">
+                <span class="option-body"><span class="option-key">B</span><span>The thing I saw yesterday. Let me show you.</span></span>
+              </label>
+              <label class="option">
+                <input type="radio" name="q3" value="house" data-scores="house:3,curator:1">
+                <span class="option-body"><span class="option-key">C</span><span>Lunch.</span></span>
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset class="question">
+            <legend><span class="q-no">04</span> Choose a vessel.</legend>
+            <div class="options">
+              <label class="option">
+                <input type="radio" name="q4" value="house" data-scores="house:3,curator:1">
+                <span class="option-body"><span class="option-key">A</span><span>A mug that is too big.</span></span>
+              </label>
+              <label class="option">
+                <input type="radio" name="q4" value="curator" data-scores="curator:3,house:1">
+                <span class="option-body"><span class="option-key">B</span><span>A bottle with a label I keep.</span></span>
+              </label>
+              <label class="option">
+                <input type="radio" name="q4" value="oracle" data-scores="oracle:3,curator:1">
+                <span class="option-body"><span class="option-key">C</span><span>An empty glass, while I decide.</span></span>
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="quiz-actions">
+            <button class="button button-dark" type="submit">Reveal my species <span aria-hidden="true">→</span></button>
+            <p class="quiet">No answers leave this page. Nothing is stored.</p>
+          </div>
+          <p class="form-error" data-quiz-error role="alert" hidden>Answer all four questions first. The frog is patient, but not that patient.</p>
+        </form>
+
+        <section class="result" data-result hidden aria-live="polite">
+          <p class="eyebrow">Your species</p>
+          <h2 data-result-name tabindex="-1">House Milk Frog</h2>
+          <p class="result-tagline" data-result-tagline></p>
+          <p class="result-copy" data-result-copy></p>
+          <ul class="traits" data-result-traits></ul>
+          <p class="result-pair" data-result-pair></p>
+          <div class="result-actions">
+            <button class="button button-yellow" type="button" data-restart>Run it again</button>
+            <p class="quiet">Result generated in your browser. Nothing saved.</p>
+          </div>
+        </section>
+      </section>
+
+      <aside class="quiz-side" aria-label="About the test">
+        <div class="side-card">
+          <h2>The three species</h2>
+          <ul class="species-list">
+            <li><strong>House Milk Frog</strong><span>Warm, low battery, extremely reliable.</span></li>
+            <li><strong>Field Curator</strong><span>Observant, dry, well-archived.</span></li>
+            <li><strong>Milk Oracle</strong><span>Thoughtful, overclocked, slightly late.</span></li>
+          </ul>
+        </div>
+
+        <div class="side-card side-card-mint">
+          <h2>A note on method</h2>
+          <p>This is a personality quiz, not a diagnosis. There are three outcomes, no login, and no database. Reload the page and the frog forgets you.</p>
+        </div>
+
+        <div class="side-card">
+          <h2>Still curious?</h2>
+          <p>The character has a longer story than the test does.</p>
+          <a class="text-link" href="origin.html">Read the origin <span aria-hidden="true">→</span></a>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-top">
+      <div class="footer-about">
+        <a class="footer-brand" href="index.html">
+          <img src="assets/brand-mark.png" alt="" width="36" height="36">
+          <span>Milk Frog <em>Field Guide</em></span>
+        </a>
+        <p>A fan-made guide to a frog that arrived with a milk bottle and stayed.</p>
+      </div>
+
+      <nav class="footer-col" aria-labelledby="footer-pages">
+        <h2 id="footer-pages">The guide</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="origin.html">Origin</a></li>
+          <li><a href="memes.html">The meme</a></li>
+          <li><a href="predict.html">Milk test</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <h2>Sources</h2>
+        <ul>
+          <li><a href="https://www.douyin.com/search/%E5%A5%B6%E8%9B%99" target="_blank" rel="noopener noreferrer">Milk Frog on Douyin</a></li>
+          <li><a href="https://github.com/Orliss/nailong" target="_blank" rel="noopener noreferrer">Fan archive on GitHub</a></li>
+          <li><a href="origin.html#sources">Notes on sourcing</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h2>Colophon</h2>
+        <p class="colophon">Set in Georgia and the system sans. Hand-written HTML, CSS, and a little JavaScript. Images are AI-generated renders from the project's original assets.</p>
+      </div>
+    </div>
+
+    <div class="shell footer-bottom">
+      <p>© <span data-year>2026</span> Jiacan Lin. Web design course assignment.</p>
+      <p>No accounts. No cookies. No tracking.</p>
+    </div>
+  </footer>
+</body>
+</html>
