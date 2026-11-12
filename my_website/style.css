@@ -812,7 +812,7 @@ ul, ol { margin-top: 0; }
 
 .meme-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
   padding-bottom: clamp(20px, 3vw, 36px);
 }
